@@ -1,4 +1,6 @@
 # LoLPing
+Avaliable on the Mac App Store: [Link](https://itunes.apple.com/us/app/lolping-helper/id1170984083?mt=12)
+
 This is a simple menu-bar application for Mac OS X devices (10.10+) that lets the user select which League of Legends server they are playing on, and shows them their current ping (delay) to this server.
 
 ## Pinging
