@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE11F87C1DC5C01F008FC424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F87B1DC5C01F008FC424 /* AppDelegate.swift */; };
+		DE11F87E1DC5C01F008FC424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE11F87D1DC5C01F008FC424 /* Assets.xcassets */; };
+		DE11F8811DC5C01F008FC424 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE11F87F1DC5C01F008FC424 /* MainMenu.xib */; };
+		DE11F8891DC5D255008FC424 /* PingAPIHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F8881DC5D255008FC424 /* PingAPIHook.swift */; };
+		DE11F88B1DC5D355008FC424 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F88A1DC5D355008FC424 /* Constants.swift */; };
+		DE11F8911DC5EAAF008FC424 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = DE11F8901DC5EAAF008FC424 /* SimplePing.m */; };
+		DE11F8941DC6B782008FC424 /* PingRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F8931DC6B782008FC424 /* PingRecorder.swift */; };
+		DE11F8B71DC6DF6C008FC424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F8B61DC6DF6C008FC424 /* AppDelegate.swift */; };
+		DE11F8B91DC6DF6C008FC424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE11F8B81DC6DF6C008FC424 /* Assets.xcassets */; };
+		DE11F8BC1DC6DF6C008FC424 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE11F8BA1DC6DF6C008FC424 /* MainMenu.xib */; };
+		DE11F8C21DC6DFDE008FC424 /* LauncherHelper.app in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE11F8B41DC6DF6C008FC424 /* LauncherHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE11F8C41DC6E006008FC424 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE11F8C31DC6E006008FC424 /* ServiceManagement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE11F8AD1DC6DC8E008FC424 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				DE11F8C21DC6DFDE008FC424 /* LauncherHelper.app in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE11F8781DC5C01F008FC424 /* LoLPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLPing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11F87B1DC5C01F008FC424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE11F87D1DC5C01F008FC424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE11F8801DC5C01F008FC424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DE11F8821DC5C01F008FC424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE11F8881DC5D255008FC424 /* PingAPIHook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingAPIHook.swift; sourceTree = "<group>"; };
+		DE11F88A1DC5D355008FC424 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE11F88F1DC5EAAF008FC424 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		DE11F8901DC5EAAF008FC424 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		DE11F8921DC5EAF8008FC424 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DE11F8931DC6B782008FC424 /* PingRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingRecorder.swift; sourceTree = "<group>"; };
+		DE11F89D1DC6DC8D008FC424 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DE11F8AE1DC6DDB6008FC424 /* LoLPing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoLPing.entitlements; sourceTree = "<group>"; };
+		DE11F8B41DC6DF6C008FC424 /* LauncherHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauncherHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11F8B61DC6DF6C008FC424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE11F8B81DC6DF6C008FC424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE11F8BB1DC6DF6C008FC424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DE11F8BD1DC6DF6C008FC424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE11F8C11DC6DF81008FC424 /* LauncherHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LauncherHelper.entitlements; sourceTree = "<group>"; };
+		DE11F8C31DC6E006008FC424 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE11F8751DC5C01F008FC424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11F8C41DC6E006008FC424 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11F8B11DC6DF6C008FC424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE11F86F1DC5C01F008FC424 = {
+			isa = PBXGroup;
+			children = (
+				DE11F87A1DC5C01F008FC424 /* LoLPing */,
+				DE11F8B51DC6DF6C008FC424 /* LauncherHelper */,
+				DE11F89C1DC6DC8D008FC424 /* Frameworks */,
+				DE11F8791DC5C01F008FC424 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE11F8791DC5C01F008FC424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F8781DC5C01F008FC424 /* LoLPing.app */,
+				DE11F8B41DC6DF6C008FC424 /* LauncherHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE11F87A1DC5C01F008FC424 /* LoLPing */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F8AE1DC6DDB6008FC424 /* LoLPing.entitlements */,
+				DE11F87B1DC5C01F008FC424 /* AppDelegate.swift */,
+				DE11F8881DC5D255008FC424 /* PingAPIHook.swift */,
+				DE11F8931DC6B782008FC424 /* PingRecorder.swift */,
+				DE11F88A1DC5D355008FC424 /* Constants.swift */,
+				DE11F87D1DC5C01F008FC424 /* Assets.xcassets */,
+				DE11F87F1DC5C01F008FC424 /* MainMenu.xib */,
+				DE11F8821DC5C01F008FC424 /* Info.plist */,
+				DE8B25BB1DCC563C000CE9CA /* Library */,
+			);
+			path = LoLPing;
+			sourceTree = "<group>";
+		};
+		DE11F89C1DC6DC8D008FC424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F8C31DC6E006008FC424 /* ServiceManagement.framework */,
+				DE11F89D1DC6DC8D008FC424 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE11F8B51DC6DF6C008FC424 /* LauncherHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F8C11DC6DF81008FC424 /* LauncherHelper.entitlements */,
+				DE11F8B61DC6DF6C008FC424 /* AppDelegate.swift */,
+				DE11F8B81DC6DF6C008FC424 /* Assets.xcassets */,
+				DE11F8BA1DC6DF6C008FC424 /* MainMenu.xib */,
+				DE11F8BD1DC6DF6C008FC424 /* Info.plist */,
+			);
+			path = LauncherHelper;
+			sourceTree = "<group>";
+		};
+		DE8B25BB1DCC563C000CE9CA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DE8B25BC1DCC564F000CE9CA /* SimplePing */,
+				DE11F8921DC5EAF8008FC424 /* Bridging-Header.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		DE8B25BC1DCC564F000CE9CA /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F88F1DC5EAAF008FC424 /* SimplePing.h */,
+				DE11F8901DC5EAAF008FC424 /* SimplePing.m */,
+			);
+			name = SimplePing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE11F8771DC5C01F008FC424 /* LoLPing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE11F8851DC5C01F008FC424 /* Build configuration list for PBXNativeTarget "LoLPing" */;
+			buildPhases = (
+				DE11F8741DC5C01F008FC424 /* Sources */,
+				DE11F8751DC5C01F008FC424 /* Frameworks */,
+				DE11F8761DC5C01F008FC424 /* Resources */,
+				DE11F8AD1DC6DC8E008FC424 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLPing;
+			productName = LoLPing;
+			productReference = DE11F8781DC5C01F008FC424 /* LoLPing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE11F8B31DC6DF6C008FC424 /* LauncherHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE11F8BE1DC6DF6C008FC424 /* Build configuration list for PBXNativeTarget "LauncherHelper" */;
+			buildPhases = (
+				DE11F8B01DC6DF6C008FC424 /* Sources */,
+				DE11F8B11DC6DF6C008FC424 /* Frameworks */,
+				DE11F8B21DC6DF6C008FC424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LauncherHelper;
+			productName = LauncherHelper;
+			productReference = DE11F8B41DC6DF6C008FC424 /* LauncherHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE11F8701DC5C01F008FC424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = OBD;
+				TargetAttributes = {
+					DE11F8771DC5C01F008FC424 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WQ65PJ26MP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					DE11F8B31DC6DF6C008FC424 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WQ65PJ26MP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DE11F8731DC5C01F008FC424 /* Build configuration list for PBXProject "LoLPing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE11F86F1DC5C01F008FC424;
+			productRefGroup = DE11F8791DC5C01F008FC424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE11F8771DC5C01F008FC424 /* LoLPing */,
+				DE11F8B31DC6DF6C008FC424 /* LauncherHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE11F8761DC5C01F008FC424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11F87E1DC5C01F008FC424 /* Assets.xcassets in Resources */,
+				DE11F8811DC5C01F008FC424 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11F8B21DC6DF6C008FC424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11F8B91DC6DF6C008FC424 /* Assets.xcassets in Resources */,
+				DE11F8BC1DC6DF6C008FC424 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE11F8741DC5C01F008FC424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11F8891DC5D255008FC424 /* PingAPIHook.swift in Sources */,
+				DE11F87C1DC5C01F008FC424 /* AppDelegate.swift in Sources */,
+				DE11F8941DC6B782008FC424 /* PingRecorder.swift in Sources */,
+				DE11F88B1DC5D355008FC424 /* Constants.swift in Sources */,
+				DE11F8911DC5EAAF008FC424 /* SimplePing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE11F8B01DC6DF6C008FC424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE11F8B71DC6DF6C008FC424 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE11F87F1DC5C01F008FC424 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE11F8801DC5C01F008FC424 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DE11F8BA1DC6DF6C008FC424 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE11F8BB1DC6DF6C008FC424 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE11F8831DC5C01F008FC424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE11F8841DC5C01F008FC424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		DE11F8861DC5C01F008FC424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoLPing/LoLPing.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WQ65PJ26MP;
+				INFOPLIST_FILE = LoLPing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = me.duman.LoLPing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoLPing/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DE11F8871DC5C01F008FC424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoLPing/LoLPing.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WQ65PJ26MP;
+				INFOPLIST_FILE = LoLPing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = me.duman.LoLPing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoLPing/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DE11F8BF1DC6DF6C008FC424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LauncherHelper/LauncherHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WQ65PJ26MP;
+				INFOPLIST_FILE = LauncherHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.duman.LauncherHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DE11F8C01DC6DF6C008FC424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LauncherHelper/LauncherHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WQ65PJ26MP;
+				INFOPLIST_FILE = LauncherHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.duman.LauncherHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE11F8731DC5C01F008FC424 /* Build configuration list for PBXProject "LoLPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11F8831DC5C01F008FC424 /* Debug */,
+				DE11F8841DC5C01F008FC424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11F8851DC5C01F008FC424 /* Build configuration list for PBXNativeTarget "LoLPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11F8861DC5C01F008FC424 /* Debug */,
+				DE11F8871DC5C01F008FC424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE11F8BE1DC6DF6C008FC424 /* Build configuration list for PBXNativeTarget "LauncherHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11F8BF1DC6DF6C008FC424 /* Debug */,
+				DE11F8C01DC6DF6C008FC424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE11F8701DC5C01F008FC424 /* Project object */;
+}
